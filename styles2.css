@@ -1,0 +1,25 @@
+/* Exercício 2 */
+/* Abra o arquivo "index.html" e descubra como centralizar perfeitamente a div ".square" em ".box". (em X e Y) */
+
+body {
+    background: #333;
+    font-family: roboto, sans-serif;
+  }
+  
+  .box {
+    position: relative; /* div com a classe ".box" é definida como position: relative;*/
+    max-width: 300px;
+    min-height: 300px;
+    background: #f1f1f1;
+    margin: 100px auto 0;
+  }
+  
+  .square {
+    position: absolute; /*top: 50%; e left: 50%; são usados para mover a origem do sistema de coordenadas da div .square para o centro da .box*/
+    background: violet;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
